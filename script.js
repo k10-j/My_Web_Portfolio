@@ -1,4 +1,19 @@
-// Form Validation
+
+const nav = document.getElementById('navbar');
+const burger = document.getElementById('burger');
+
+burger.addEventListener('click', function (){
+  console.log('the button clicked')
+  nav.classList.toggle('open');
+  
+})
+nav.addEventListener('click', function (){
+  console.log('the button clicked')
+  nav.classList.toggle('open');
+  
+})
+
+
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
   const name = this.name.value.trim();
